@@ -29,7 +29,7 @@ Coleccion de resumenes, actividades y desafios entregables del curso de Programa
             <img src="https://i.imgur.com/a4VuNIb.png">
             <h3>Desafío 1</h3>
             <p>Principios de programación Backend & Principios básicos de Javascript</p>
-            <a href="MODULO I/Desafío 001 - Clases ECMAScript y ECMAScript avanzado/Módulo I - Clase 2.pptx"><img src="https://i.imgur.com/9pM5zrm.png"></a>
+            <a href="MODULO I/Desafío 001 - Clases ECMAScript y ECMAScript avanzado/clases.js"><img src="https://i.imgur.com/9pM5zrm.png"></a>
         </td>
     </tr>
 </table>
