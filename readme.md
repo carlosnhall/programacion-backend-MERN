@@ -33,6 +33,18 @@ Coleccion de resumenes, actividades y desafios entregables del curso de Programa
         </td>
     </tr>
 </table>
+<br>
+<table >
+    <tr>
+        <td>
+            <img src="https://i.imgur.com/bW3XnCI.jpg">
+            <h3>Desafío 2</h3>
+            <p>Manejo de archivos</p>
+            <a href="MODULO I/Desafío 001 - Clases ECMAScript y ECMAScript avanzado/clases.js"><img src="https://i.imgur.com/9pM5zrm.png"></a>
+        </td>
+    </tr>
+</table>
+
   
 ## Proyecto Final
 Desarrollar el **backend de una aplicación de e-commerce** totalmente funcional.
