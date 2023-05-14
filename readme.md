@@ -40,7 +40,7 @@ Coleccion de resumenes, actividades y desafios entregables del curso de Programa
             <img src="https://i.imgur.com/bW3XnCI.jpg">
             <h3>Desafío 2</h3>
             <p>Manejo de archivos                                                   </p>
-            <a href="MODULO I/Desafío 001 - Clases ECMAScript y ECMAScript avanzado/clases.js"><img src="https://i.imgur.com/9pM5zrm.png"></a>
+            <a href="MODULO I/Desafío 002 - Manejo de archivos en Javascript"><img src="https://i.imgur.com/9pM5zrm.png"></a>
         </td>
     </tr>
 </table>
