@@ -26,10 +26,10 @@ Coleccion de resumenes, actividades y desafios entregables del curso de Programa
 <table >
     <tr>
         <td>
-            <img src="https://i.imgur.com/a4VuNIb.png">
-            <h3>Desafío 1</h3>
-            <p>Principios de programación Backend & Principios básicos de Javascript</p>
-            <a href="MODULO I/Desafío 001 - Clases ECMAScript y ECMAScript avanzado/clases.js"><img src="https://i.imgur.com/9pM5zrm.png"></a>
+            <img src="https://i.imgur.com/fOHHB6R.png">
+            <h3>Desafío 3</h3>
+            <p>Manejo de archivos&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+            <a href="MODULO I/Desafío 003 - Manejo de archivos en Javascript"><img src="https://i.imgur.com/9pM5zrm.png"></a>
         </td>
     </tr>
 </table>
@@ -44,8 +44,18 @@ Coleccion de resumenes, actividades y desafios entregables del curso de Programa
         </td>
     </tr>
 </table>
+<br>
+<table >
+    <tr>
+        <td>
+            <img src="https://i.imgur.com/a4VuNIb.png">
+            <h3>Desafío 1</h3>
+            <p>Principios de programación Backend & Principios básicos de Javascript</p>
+            <a href="MODULO I/Desafío 001 - Clases ECMAScript y ECMAScript avanzado/clases.js"><img src="https://i.imgur.com/9pM5zrm.png"></a>
+        </td>
+    </tr>
+</table>
 
-  
 ## Proyecto Final
 Desarrollar el **backend de una aplicación de e-commerce** totalmente funcional.
 El servidor se basará en un diseño de capas, orientado a MVC y su código contendrá las estructuras de programación más sólidas por parte del lenguaje ECMAScript.
