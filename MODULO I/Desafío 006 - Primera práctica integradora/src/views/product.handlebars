@@ -1,0 +1,23 @@
+<section id="products" class="container">
+    
+    <h1 id="title">Producto {{product.title}}</h1>
+
+    <div id="products-container">
+        <div class="card mb-3">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img class="img-fluid rounded-start" src="{{product.thumbnail}}">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">{{product.title}}</h5>
+                        <p class="card-text">{{product.description}}</p>
+                        <p class="card-text">${{product.price}}</p>
+                        <p class="card-text">ID: {{product._id}}</p>
+                        <p class="card-text">Stock: {{product.stock}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

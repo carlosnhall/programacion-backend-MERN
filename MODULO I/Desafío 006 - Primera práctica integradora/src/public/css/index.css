@@ -1,0 +1,92 @@
+body{
+    background-color: rgb(202, 206, 212);
+}
+#title{
+    padding: 32px;
+    margin: 32px 0;
+    background-color: rgb(49, 49, 49);
+    color: whitesmoke;
+    border-radius: 6px;
+}
+#products-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 16px;
+}
+#products-container .card .row img{
+    height: 100%!important;
+    width: 212px!important;
+    object-fit: cover!important;
+}
+#form-container{
+    padding: 32px;
+    margin: 32px 0;
+    border-radius: 6px;
+    color: rgb(49, 49, 49);
+    display: flex;
+    flex-flow: column;
+    gap: 8px;
+}
+#form-container #form{
+    display: flex;
+    flex-flow: column;
+    gap: 8px;
+}
+#form-container #form input{
+    border-radius: 5px;
+    border: none;
+    padding: 16px;
+}
+#form-container #form input:focus{
+    outline: none;
+}
+#submitInput-container{
+    align-self: end;
+}
+#submitInput{
+    font-weight: 400;
+    cursor: pointer;
+    transition: all .3s;
+    background-color: #0d6efd;
+}
+#submitInput:hover{
+    background-color: rgb(10, 71, 163);
+}
+#delete-container{
+    padding: 32px;
+    margin: 32px 0;
+    border-radius: 6px;
+    color: rgb(49, 49, 49);
+    display: flex;
+    flex-flow: column;
+    gap: 8px;
+}
+#delete-container #deleteForm{
+    display: flex;
+    flex-flow: column;
+    gap: 8px;
+}
+#delete-container #deleteForm input{
+    border-radius: 5px;
+    border: none;
+    padding: 16px;
+}
+#delete-container #deleteForm input:focus{
+    outline: none;
+}
+#deleteInput-container{
+    align-self: end;
+}
+#deleteInput{
+    font-weight: 400;
+    cursor: pointer;
+    transition: all .3s;
+    background-color: #ff3232;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding: 16px;
+}
+#deleteInput:hover{
+    background-color:  #db2828;
+}
