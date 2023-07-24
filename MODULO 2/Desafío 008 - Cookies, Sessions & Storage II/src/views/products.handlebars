@@ -1,0 +1,92 @@
+<section id="products" class="container">
+    
+    <h1 id="title">Productos</h1>
+
+    <haeder>
+        <nav id="nav">
+            <div class="nav-container">
+                <h4>Ordenar por:</h4>
+                <ul>
+                    <li><a id="linkDesc" href="">Mayor precio</a></li>
+                    <li><a id="linkAsc" href="">Menor precio</a></li>
+                </ul>
+            </div>
+
+            <div class="nav-container">
+                <h4>Categorias:</h4>
+                <ul>
+                    <li><a id="catHome" href="">Muebles Hogar</a></li>
+                    <li><a id="catGarden" href="">Muebles Jardin</a></li>
+                </ul>
+            </div>
+        </nav>
+    </haeder>
+
+    <div id="products-container">
+        {{#each products.docs}}
+            <div class="card mb-3">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img class="img-fluid rounded-start"src={{this.thumbnail}} >
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">{{this.title}}</h5>
+                            <p class="card-text">{{this.description}}</p>
+                            <p class="card-text">${{this.price}}</p>
+                            <p class="card-text">ID: {{this._id}}</p>
+                            <p class="card-text">Categoria: {{this.category}}</p>
+                            <p class="card-text">Stock: {{this.stock}}</p>
+                            <div id="botonera">
+                                <a href="http://localhost:8080/products/{{this._id}}"><button type="button" class="btn btn-primary">Ver más</button></a>
+                                <form action="http://localhost:8080/api/carts/6474b02395e35b192ca0b1aa/products/{{this._id}}" method="post">
+                                    <input type="submit" class="btn btn-dark" value="Agregar al carrito">
+                                </form>
+                                
+                                <div id="plusMinus">
+                                    <button id="plus">+</button>
+                                    <p id="quantity">0</p>
+                                    <button id="minus">-</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {{/each}}
+ 
+
+        <nav aria-label="Page navigation example">
+            <ul class="pagination">
+                <li class="page-item">
+                    {{#if products.hasPrevPage}}
+                    <a class="page-link" href={{products.prevLink}} aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                    </a>
+                    {{else}}
+                    <a class="page-link disabled" href="" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                    </a>
+                    {{/if}}
+                </li>
+                
+                {{#each  products.totalPagesArray}}
+                    <li class="page-item"><a class="page-link" href="/products?page={{this}}">{{this}}</a></li>
+                {{/each}}
+
+                <li class="page-item">
+                    {{#if products.hasNextPage}}
+                    <a class="page-link" href={{products.nextLink}} aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                    </a>
+                    {{else}}
+                    <a class="page-link disabled" href="" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                    </a>
+                    {{/if}}
+                </li>
+            </ul>
+
+        </nav>
+    </div>
+</section>
