@@ -1,0 +1,71 @@
+// Login / Register Forms
+#form-section{
+    @include grid-container(1fr auto 1fr, auto);
+    @include sizes(100vw, 100vh);
+    background-color: $black;
+    #form-article{
+        @include flex(column, nowrap, space-between, start, $space-16);
+        grid-column: 2/3;
+        align-self: center;
+        height: fit-content;
+        padding:  $space-16 $space-32;
+        border-radius: 5px;
+        background-color: $white;
+        #form-header{
+            #header-title{
+                color: $grey;
+                font-size: $font-16;
+            }
+        }
+        #form{
+            @include flex(column, nowrap, space-between, start, $space-16);
+            .input{
+                height: 30px;
+                border-radius: 5px;
+                padding: $space-8;
+                border: none;
+                color: $black;
+                transition: all .3s;
+                box-shadow: 0px 2px 10px -5px $grey;
+            }
+            .input:focus{
+                border: none;
+                outline: none;
+                box-shadow: 0px 5px 15px -5px $grey;
+            }
+            .input::placeholder{
+                color: $grey-op80;
+            }
+        }
+        #space{
+            width: 100%;
+            #space-txt{
+                padding: $space-6 0;
+                font-size: $font-12;
+                color: $grey-op80;
+            }
+            #space-line{
+                height: 2px;
+                width: 100%;
+                background-color: $grey-op80;
+                border-radius: 50%;
+            }
+        }
+
+        #github{
+            width: 100%;
+            a{
+                @include flex(row, nowrap, center, center, $space-6);
+                padding: $space-8;
+                border: solid 1px $grey-op80;
+                border-radius: 5px;
+                font-size: $font-16;
+                color: $grey;
+                transition: all .3s;
+            }
+            a:hover{
+                color: $black;
+            }
+        }
+    }
+}

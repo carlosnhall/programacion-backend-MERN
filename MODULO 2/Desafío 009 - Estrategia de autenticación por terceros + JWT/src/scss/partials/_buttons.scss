@@ -1,0 +1,15 @@
+.form-button{
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding: $space-8;
+    font-size: $font-14;
+    font-weight: 400;
+    background-color: $grey-op80;
+    color: $white;
+    cursor: pointer;
+    transition: all .3s;
+}
+.form-button:hover{
+    background-color: $grey;
+}

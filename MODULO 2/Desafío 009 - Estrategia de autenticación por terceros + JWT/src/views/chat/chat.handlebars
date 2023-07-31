@@ -1,0 +1,41 @@
+<div id="modal-container">
+    <article id="modal">
+        <header id="modal-header">
+            <h2 id="header-title">Welcome to WannaChat!</h2>
+            <figure id="header-figure">
+                <img src="./assets/wannachat-logo.png" alt="">
+            </figure>
+        </header>
+        <form action="/chat" id="modal-form">
+            <label for="inputNickName" id="inputNickName-label">
+                <p>Enter a nickname between 4 and 24 characters.</p>
+            </label>
+            <input type="text" placeholder="Username" id="inputNickName">
+            <input type="submit" id="submitNickName" value="Ready!">
+        </form>
+    </article>
+</div>
+<main id="main-container">
+    <div id="glass-container">
+        <header id="header">
+            <figure id="heade-figure">
+                <img src="./assets/wannachat-logo.png" alt="Wanna chat logo">
+            </figure>
+        </header>
+        <section id="chat">
+            <article id="chat-history">
+            </article>
+            <form id="chat-form" action="/">    
+                <textarea id="textArea" name="text"></textarea>
+                <input type="submit" name="submit" id="inputSubmit">
+                <label for="inputSubmit" id="inputSubmit-label">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#ff521b" d="m3.4 20.4l17.45-7.48a1 1 0 0 0 0-1.84L3.4 3.6a.993.993 0 0 0-1.39.91L2 9.12c0 .5.37.93.87.99L17 12L2.87 13.88c-.5.07-.87.5-.87 1l.01 4.61c0 .71.73 1.2 1.39.91z"/></svg>
+                </label>
+            </form>
+        </section>
+        <footer id="footer">
+            <a href="https://github.com/SebastianBoari"><p id="footer-text">Sebastian Boari Dev</p></a>
+        </footer>
+    </div>
+</main>
+<script src="/socket.io/socket.io.js"></script>

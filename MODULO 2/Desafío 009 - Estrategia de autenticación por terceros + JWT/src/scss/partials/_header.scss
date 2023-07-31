@@ -1,0 +1,76 @@
+#header{
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    .header-container{
+        @include flex(row, nowrap, space-between, center, $space-32);
+        padding: $space-16 0;
+        background-color: $white;
+        #header-figure{
+            img{
+                max-width: 7rem;
+            }
+        }
+        
+        #header-nav{
+            @include flex(row, nowrap, space-between, center, 0);
+            width: 100%;
+
+            #nav-left{
+                @include flex(row, nowrap, space-between, center, $space-8);
+                list-style: none;
+
+                .nav-button{
+                    a{
+                        color: $black;
+                        font-size: $font-14;
+                        font-weight: 600;
+                        padding: $space-6 $space-18;
+                        border-radius: 2.5rem;
+                        transition: all .3s;
+                    }
+                    a:hover{
+                        background-color: $white;
+                        color: $orange;
+                        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+                    }
+                }
+
+                #catalogue-button{
+                    a{
+                        cursor: pointer;
+                        font-size: $font-14;
+                        background-color: $black;
+                        padding: $space-6 $space-32;
+                        border-radius: 2.5rem;
+                        transition: all .3s;
+                        font-weight: 500;
+                        color: $white;
+                        transition: all .3s;
+                    }
+                }
+                #catalogue-button:hover{
+                    a{
+                        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+                        background-color: $black-strong;
+                    }
+                }
+            }
+
+            #nav-right{
+                @include flex(row, nowrap, space-between, center, $space-32);
+
+                .nav-icon{
+                    cursor: pointer;
+                    svg{
+                        width: 34px;
+                        color: $black;
+                    }
+                }
+                #user-button{
+                    background-color: rgba(0, 0, 0, 0);
+                    border: none;
+                    padding-top: $space-6;
+                }
+            }
+        }
+    }
+}

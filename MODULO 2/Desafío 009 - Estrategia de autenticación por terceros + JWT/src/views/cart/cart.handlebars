@@ -1,0 +1,36 @@
+<section id="products" class="container">
+
+    <h1 id="title">Carrito</h1>
+
+
+    <div id="products-container">
+        {{#each cart.products}}
+            <div class="card mb-3">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img class="img-fluid rounded-start" src={{this.product.thumbnail}}>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">{{this.product.title}}</h5>
+                            <p class="card-text">{{this.product.description}}</p>
+                            <p class="card-text">${{this.product.price}}</p>
+                            <p class="card-text">ID: {{this.product._id}}</p>
+                            <p class="card-text">Categoria: {{this.product.category}}</p>
+                            <p class="card-text">Stock: {{this.product.stock}}</p>
+                            <div id="botonera">
+                                <a href="http://localhost:8080/products/{{this.product._id}}"><button type="button" class="btn btn-primary">Ver más</button></a>
+                                <button type="button" class="btn btn-dark">Agregar al carrito</button>
+                                <div id="plusMinus">
+                                    <button id="plus">+</button>
+                                    <p id="quantity">0</p>
+                                    <button id="minus">-</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {{/each}}
+    </div>
+</section>
