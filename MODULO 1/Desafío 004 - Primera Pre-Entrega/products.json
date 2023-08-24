@@ -1,0 +1,36 @@
+[
+    {
+      "id": 1,
+      "title": "producto prueba 1",
+      "description": "Este es un producto prueba 1",
+      "price": 100,
+      "status": true,
+      "thumbnail": [],
+      "code": "abc121",
+      "stock": 21
+    },
+    {
+      "id": 3,
+      "title": "producto prueba 3",
+      "description": "Este es un producto prueba 3",
+      "price": 300,
+      "status": true,
+      "thumbnail": [],
+      "code": "abc123",
+      "stock": 23
+    },
+    {
+      "id": 4,
+      "title": "Producto prueba 4",
+      "description": "PRUEBA 12",
+      "price": 7272727272,
+      "status": true,
+      "thumbnail": [
+        "url1",
+        "urlasdlasd",
+        "aksdaklsd"
+      ],
+      "code": "123123123123",
+      "stock": 900
+    }
+  ]
