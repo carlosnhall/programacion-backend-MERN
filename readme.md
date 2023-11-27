@@ -1,5 +1,5 @@
 # Programacion Backend
-![](https://gurzu.com/img/gurzu/mern-stack-01.png)
+![](https://res.cloudinary.com/dzerohyrd/image/upload/v1701123818/wp8725091-mern-stack-wallpapers_ihow3g.jpg)
 
 ### **Sobre el repositorio:**
 Coleccion de resumenes, actividades y desafios entregables del curso de Programacion Backend impartido por Coderhouse.

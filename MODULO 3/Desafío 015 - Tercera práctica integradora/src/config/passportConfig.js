@@ -27,9 +27,8 @@ const initializePassport = () => {
     "google",
     new GoogleStrategy(
       {
-        clientID:
-          "398333993561-sngbcuiggfce5eccss5p13cpl37ggohm.apps.googleusercontent.com",
-        clientSecret: "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",
+        clientID:"Iv1.8aa53fcd01061557",
+        clientSecret: "c04ac2c04804a106def267e745de66aace5ddb49",
         callbackURL: `${process.env.DOMAIN_NAME}/session/googlecallback`,
         passReqToCallback: true,
       },
@@ -66,8 +65,8 @@ const initializePassport = () => {
     "github",
     new GitHubStrategy(
       {
-        clientID: "Iv1.34ee5890827cdd0f",
-        clientSecret: "d850e1513b15048d7be01b42e5123da07633fff5",
+        clientID: "Iv1.8aa53fcd01061557",
+        clientSecret: "f4ff591e65f33ae5a6bc89a2c0f03b7500c362e9 ",
         callbackURL: `${process.env.DOMAIN_NAME}/session/githubcallback`,
       },
       async (accessToken, refreshToken, profile, done) => {
